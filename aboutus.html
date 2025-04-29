@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> E-Commerce | About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 font-sans flex flex-col min-h-screen">
+    <header class="flex justify-between items-center bg-orange-400 p-4 shadow-md">
+        <div class="flex gap-2">
+        <img src="images/Icon.png" alt="no image" class="w-10 h-10">
+        <h1 class="text-2xl font-semibold">E-Commerce</h1>
+    </div>
+        <div class="flex gap-4 items-center ">
+            <!-- Shopping Cart Icon (Only SVG) -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-gray-700 hover:text-blue-600 transition-colors cursor-pointer" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6h12.4M7 13l1.5 6M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z" />
+            </svg>
+    
+            <!-- Wishlist Icon (Heart) in Tailwind CSS -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black hover:text-red-600 transition duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-7.682a4.5 4.5 0 010-6.364z" />
+            </svg>
+            <!-- Login Button -->
+            <a href="/login.html"><button
+                    class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+                    Login
+                </button></a>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <nav id="nav" class="flex w-full bg-white p-4 gap-40 justify-center h-auto font-medium text-lg">
+                <a href="ecommerce.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </nav>
+        </main>
+    <!-- Mission Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Mission</h2>
+            <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                At [Your Store Name], we believe in offering quality products at affordable prices. Our mission is to provide a hassle-free shopping experience, where customers come first and satisfaction is guaranteed. We aim to be your go-to online destination for everything you need, whether it’s fashion, tech, or home essentials.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="max-w-6xl mx-auto py-16 px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-semibold text-gray-800">Why Choose Us?</h2>
+            <p class="mt-4 text-lg text-gray-700">Here's why we stand out from the rest:</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <div class="text-center">
+                <div class="bg-indigo-600 text-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg">
+                    <i class="fas fa-cogs text-2xl"></i>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-gray-800">Quality Products</h3>
+                <p class="mt-2 text-gray-600">We carefully handpick the best products that meet our high standards of quality and reliability.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-indigo-600 text-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg">
+                    <i class="fas fa-truck-fast text-2xl"></i>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-gray-800">Fast & Free Shipping</h3>
+                <p class="mt-2 text-gray-600">Enjoy fast and free shipping on all orders, ensuring you get your items quickly and at no extra cost.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-indigo-600 text-white rounded-full w-20 h-20 mx-auto flex items-center justify-center shadow-lg">
+                    <i class="fas fa-headset text-2xl"></i>
+                </div>
+                <h3 class="mt-6 text-xl font-semibold text-gray-800">Customer Support</h3>
+                <p class="mt-2 text-gray-600">Our friendly customer support team is available 24/7 to help with any queries or issues you may have.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2025 [Your Store Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

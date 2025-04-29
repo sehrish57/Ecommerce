@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce | Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+<header class="flex justify-between items-center bg-orange-400 p-4 shadow-md">
+    <img src="images/Icon.png" alt="no image" class="w-10 h-10">
+    <h1 class="text-2xl font-semibold">E-Commerce</h1>
+
+
+
+    <!-- Search Bar -->
+    <div class="flex items-center max-w-md mx-auto bg-white border border-gray-300 rounded-full shadow-sm px-4 py-2">
+        <input type="text" placeholder="Search..."
+            class="flex-grow outline-none text-gray-700 placeholder-gray-400 bg-transparent" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 103 10.5a7.5 7.5 0 0013.15 6.15z" />
+        </svg>
+    </div>
+
+    <div class="flex gap-4 items-center ">
+        <!-- Shopping Cart Icon (Only SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-gray-700 hover:text-blue-600 transition-colors cursor-pointer" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6h12.4M7 13l1.5 6M9 21a1 1 0 100-2 1 1 0 000 2zm10 0a1 1 0 100-2 1 1 0 000 2z" />
+        </svg>
+
+        <!-- Wishlist Icon (Heart) in Tailwind CSS -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black hover:text-red-600 transition duration-300"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-7.682a4.5 4.5 0 010-6.364z" />
+        </svg>
+        <!-- Login Button -->
+        <a href="/login.html"><button
+                class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition duration-300">
+                Login
+            </button></a>
+    </div>
+</header>
+    <nav id="nav" class="flex w-full bg-white p-4 gap-40 justify-center h-auto font-medium text-lg">
+            <a href="ecommerce.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="aboutus.html">About</a>
+        </nav>
+
+
+    <div class="min-h-screen flex items-center justify-center px-4">
+        <div class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Contact Us</h2>
+
+            <form action="#" method="POST" class="space-y-6">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input type="email" id="email" name="email" required
+                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500" />
+                </div>
+
+                <!-- Message -->
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit"
+                        class="inline-block w-full bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-300">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+<footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-6xl mx-auto text-center">
+        <p>&copy;E-Commerce 2025. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+
+</html>
