@@ -1,0 +1,35 @@
+.container{
+    background-color:white; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    padding:10px; 
+    text-align:center; 
+    font-size:30px
+}
+.button{
+   padding: 3px 4px;
+    background-color: rgb(224, 84, 84);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: #dc2626; 
+}
+.price{
+    color: gray;
+}
+.name{
+    font-weight: 500;
+    font-size: large;
+    color: #111827;
+}
+.image{
+    width:5rem; 
+    height:5rem; 
+}
+.div{
+display: flex;
+    flex: 1 1 0%;
+    margin-left: 1rem; 
+    flex-direction: column;
+}

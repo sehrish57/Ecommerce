@@ -1,0 +1,52 @@
+#parent{
+    margin-top:10px;
+    margin-left: auto;
+     display: flex;
+   flex-wrap: wrap;
+   gap:10px;
+}
+.card{
+    background-color:white; 
+    width:300px;
+     height:500px; 
+     padding:20px;
+    display:flex; 
+    align-items:center; 
+    flex-direction:column; 
+    justify-content:space-between;
+    border-radius: 10px;
+}
+.description{
+    text-align:center; 
+   padding: 0 16px;
+}
+.wishbtn{
+    background-color: #d1d5db;
+     color: #ea580c; 
+     padding-top:10px; 
+     white-space:nowrap; 
+     padding-bottom:10px; 
+     padding-right:12px; 
+     padding-left:12px; 
+     border-radius:5px; 
+     font-size:20px;
+}
+.cartbtn{
+    background-color: #ea580c; 
+    transition: background-color 0.3s; 
+    padding-top:10px; 
+    white-space:nowrap; 
+    padding-bottom:10px; 
+    padding-right:12px; 
+    padding-left:12px; 
+    border-radius:5px; 
+    font-size:20px; 
+    color:white;
+}
+.image{
+    height:230px;
+}
+.buttons{
+   display: flex; 
+   gap:7px;
+}

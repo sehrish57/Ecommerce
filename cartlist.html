@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>E-Commerce | Cartlist</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cartlist.css">
 </head>
 
 <body class="flex flex-col min-h-screen bg-gray-100">
@@ -13,7 +14,6 @@
         <img src="images/Icon.png" alt="no image" class="w-10 h-10">
         <a href="ecommerce.html"><h1 class="text-2xl font-semibold">E-Commerce</h1>
         </a>
-
 
         <!-- Search Bar -->
         <div
@@ -52,7 +52,6 @@
     <main class="flex-grow">
     <div id="divproduct"  class="max-w-4xl mx-auto mt-12 bg-white shadow-lg rounded-lg p-6">
         <h1 class="text-3xl font-semibold text-center text-gray-800 mb-6">Your Cartlist</h1>
-
     </div>
 </main>
 
@@ -63,43 +62,7 @@
     </footer>
 
 
-    <script>
-       let cartArray= JSON.parse(localStorage.getItem("cart"))
-       if(!cartArray || cartArray.length === 0)
-{
-    let container = document.querySelector("#divproduct");
-      let heading=document.createElement("h3")
-      heading.innerText="your cartlist is empty"
-      heading.style.cssText="background-color:blue"
-      container.appendChild(heading)
-    }
-    else{
-      cart(cartArray)
-    }
-       function cart(cartArray){
-       let products=document.getElementById("divproduct")
-           cartArray.map((element)=>{
-            let div=document.createElement("div")
-            products.appendChild(div)
-            div.innerHTML= `<div class="flex items-center justify-between border-b py-4">
-                   <img  src="" alt="Product" class="w-20 h-20 object-cover rounded image"/>
-                   <div class="flex-1 ml-4">
-                       <h3 class="text-lg font-medium text-gray-900 name"></h3>
-                       <p class="text-gray-600 price"></p>
-                   </div>
-                   <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded transition">Remove</button>
-               </div>`
-               const image=div.querySelector(".image")
-               image.src=element.path
-               const productName=div.querySelector(".name")
-               productName.innerText=element.title
-               const price=div.querySelector(".price")
-               price.innerText=element.price
-               
-           })
-        }
-
-    </script>
+   <script src="cartlist.js"></script>
 </body>
 
 </html>
